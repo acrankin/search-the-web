@@ -26,6 +26,7 @@ export default {
 }
 .article-tile:hover{
   box-shadow: 3px 2px 2px darkgray;
+  background-color: rgba(245, 96, 96, 0.432);
 }
 
 </style>

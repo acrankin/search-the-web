@@ -25,5 +25,11 @@ export default {
 </script>
 
 <style>
+form{
+  margin: 20px;
+}
+button{
+  border-radius: 4px;
+}
 
 </style>
