@@ -1,6 +1,6 @@
 <template>
   <li>
-    <!-- {{ article.}} -->
+    {{ article.title }}
     <!-- <p>{{ article.title }}</p> -->
   </li>
     
@@ -8,9 +8,9 @@
 
 <script>
 export default {
-  // props: {
-  //   article: Object
-  // }
+  props: {
+    article: Object
+  }
 };
 </script>
 

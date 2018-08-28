@@ -6,10 +6,9 @@
 
       <div class="search-container">
         <ul v-if="articles">
-          <!-- <Article v-for="article in articles"
+          <Article v-for="article in articles"
             :key="article.title"
-            :author="article.author"
-            :description="article.description" -->
+            :article="article"
             />
         </ul>
       </div>
@@ -41,9 +40,10 @@ export default {
       //loading, error, etc.
       api.getNews(this.search)
         .then(response => {
-          console.log(this.articles, this.count);
           this.articles = response.articles;
           this.count = response.totalResults;
+          // console.log(this.articles, this.count);
+          console.log(this.articles[0].title);
 
         });
     }
