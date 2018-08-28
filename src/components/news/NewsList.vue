@@ -7,7 +7,10 @@
       <div class="search-container">
         <ul v-if="articles">
           <!-- <Article v-for="article in articles"
-            :key="article." -->
+            :key="article.title"
+            :author="article.author"
+            :description="article.description" -->
+            />
         </ul>
       </div>
     </section>
@@ -20,8 +23,10 @@ import NewsSearch from './NewsSearch';
 
 export default {
   data() {
-    
-
+    return {
+      articles: null,
+      totalResults: null,
+    };
   },
   components: {
     Article,
@@ -36,7 +41,7 @@ export default {
       //loading, error, etc.
       api.getNews(this.search)
         .then(response => {
-          console.log(this.articles);
+          console.log(this.articles, this.count);
           this.articles = response.articles;
           this.count = response.totalResults;
 

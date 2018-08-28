@@ -1,14 +1,16 @@
 <template>
   <li>
     <!-- {{ article.}} -->
-    <p>This is one article</p>
+    <!-- <p>{{ article.title }}</p> -->
   </li>
     
 </template>
 
 <script>
 export default {
-
+  // props: {
+  //   article: Object
+  // }
 };
 </script>
 
