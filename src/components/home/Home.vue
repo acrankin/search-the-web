@@ -1,7 +1,7 @@
 <template>
     <section>
       <h2>Let's search the news!</h2>
-      <router-link to="/news">search the news!</router-link>
+      <router-link to="/newslist">search the news!</router-link>
     </section>
 </template>
 
