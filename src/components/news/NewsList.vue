@@ -1,7 +1,6 @@
 <template>
     <section class="articles">
-      <p> Hello Newslist </p>
-
+      
       <NewsSearch :onSearch="handleSearch"/>
 
       <div class="search-container">
@@ -42,17 +41,17 @@ export default {
         .then(response => {
           this.articles = response.articles;
           this.count = response.totalResults;
-          // console.log(this.articles, this.count);
-          console.log(this.articles[0].title);
-
         });
     }
   }
-    
-
 };
 </script>
 
 <style>
+ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
 
+}
 </style>

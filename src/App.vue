@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1>news news news</h1>
+      <h1>Al's News Aggregator</h1>
       <nav>
         <router-link to="/">Home</router-link>
         <router-link to="/newslist">News</router-link>
@@ -30,5 +30,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
 }
 </style>
